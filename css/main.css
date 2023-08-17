@@ -1,0 +1,608 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: block;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  background: rgb(20, 17, 14);
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.active {
+  color: rgb(201, 158, 113);
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+.btn-primary {
+  padding: 20px 36px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: rgb(201, 158, 113);
+  transition: background-color 0.3s ease-in;
+}
+.btn-primary:hover {
+  background-color: rgb(168, 133, 96);
+}
+
+.title {
+  font-family: "Righteous", cursive;
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.3;
+  padding-bottom: 56px;
+}
+
+.accent-title {
+  font-family: "Urbanist", sans-serif;
+  color: rgb(201, 158, 113);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 12px;
+}
+
+.subtitle {
+  font-family: "Urbanist", sans-serif;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  text-transform: capitalize;
+}
+
+.logo {
+  width: 72px;
+  height: 60px;
+}
+
+.header-btn {
+  width: 30px;
+  height: 30px;
+  transition: color 0.2s ease-in;
+}
+.header-btn:hover {
+  color: rgb(201, 158, 113);
+}
+
+.nav-header {
+  flex-grow: 1;
+}
+
+.container-header, .nav-header, .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  gap: 48px;
+  margin-right: 51px;
+}
+
+.nav-link {
+  transition: color 0.2s ease-in;
+}
+.nav-link:hover {
+  color: rgb(201, 158, 113);
+}
+
+#header-section {
+  padding: 32px 0;
+  background-color: rgb(28, 24, 20);
+}
+
+.container-header {
+  padding: 0 10px;
+}
+
+.header-action {
+  display: flex;
+  gap: 62px;
+}
+
+.banner {
+  background: linear-gradient(178.71deg, rgba(1, 1, 2, 0) 37.52%, rgba(1, 1, 2, 0.405) 95.35%), url(../img/banner/bg.png);
+  text-align: start;
+  padding: 147px 0 166px;
+}
+
+.banner-title {
+  font-size: 72px;
+  line-height: 1.3;
+}
+
+.banner-subtitle {
+  padding-bottom: 64px;
+}
+
+.btn-primary {
+  padding: 24px 40px;
+}
+
+.cards {
+  display: flex;
+  padding: 140px 0;
+  text-align: start;
+  gap: 36px;
+}
+
+.card {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.card-title {
+  margin: 0 0 24px 0;
+}
+
+.card-accent {
+  color: rgb(201, 158, 113);
+  margin-right: 12px;
+}
+
+.history-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: stretch;
+  gap: 32px;
+}
+
+.history-img:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.history-img:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.history-img:last-child {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.history {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  padding: 120px 56px 147px;
+  background-color: rgb(28, 24, 20);
+  text-align: start;
+}
+
+.product-wrap {
+  padding: 140px 0;
+}
+
+.product_cards {
+  display: flex;
+  gap: 36px;
+}
+
+.product_card {
+  padding: 48px 48px 40px;
+  background-color: #121315;
+}
+.product_card:hover .coffe_raiting {
+  display: none;
+}
+.product_card:hover .product-price {
+  display: none;
+}
+.product_card:hover .product-hover_btn {
+  display: block;
+}
+.product_card:hover .product-title {
+  padding: 36px 0 38px;
+}
+
+.coffe_raiting {
+  display: flex;
+  justify-content: center;
+  padding: 37px 0 20px;
+  align-items: center;
+}
+
+.coffee_raiting-title {
+  text-transform: uppercase;
+  color: rgb(201, 158, 113);
+  margin-right: 14px;
+}
+
+.coffe_star {
+  font-size: 16px;
+  color: rgb(201, 158, 113);
+  margin-right: 7px;
+}
+
+.product-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.product-price {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0;
+}
+
+.product-price_accent {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(201, 158, 113);
+}
+
+.product-btn {
+  margin-top: 55px;
+}
+
+.product-hover_btn {
+  text-align: -webkit-center;
+  display: none;
+}
+
+.product_btn {
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.coffee_machine {
+  margin-bottom: 140px;
+  background-color: rgb(28, 24, 20);
+  display: flex;
+}
+
+.coffee_machine-img {
+  padding: 85px 165px;
+}
+
+.coffee_machine-content {
+  text-align: start;
+}
+
+.coffee_machine-title {
+  padding: 72px 114px 36px 0;
+}
+
+.coffee_machine-text {
+  padding-right: 80px;
+  padding-bottom: 36px;
+}
+
+.menu {
+  padding-bottom: 140px;
+}
+
+.menu-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.menu-card, .menu-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card {
+  padding: 24px;
+  border: 1px solid #32323D;
+}
+
+.menu_left, .menu_right {
+  display: grid;
+  gap: 36px;
+}
+
+.menu-card-title {
+  margin-left: 20px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.menu-price {
+  color: rgb(201, 158, 113);
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.testimonial {
+  padding-bottom: 140px;
+}
+
+.testimonial-slide {
+  padding: 40px;
+  background-color: rgb(28, 24, 20);
+}
+
+.slide-top {
+  display: flex;
+  gap: 24px;
+  text-align: start;
+}
+
+.slide-bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.people-name {
+  opacity: 1;
+  padding: 28px 0 4px;
+}
+
+.people-profeshion {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.slider-star {
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+
+.slider-raiting {
+  color: #FAA61A;
+  font-size: 20px;
+}
+
+.navigation {
+  padding: 36px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-right {
+  display: flex;
+  gap: 16px;
+}
+
+.navigation-left {
+  color: rgb(201, 158, 113);
+  width: 120px;
+}
+
+.prev {
+  padding: 21px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(201, 158, 113);
+}
+
+.next {
+  padding: 21px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #121315;
+}
+
+.swiper-pagination {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.image-slider__fraction {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  color: rgb(201, 158, 113);
+  margin-bottom: 20px;
+}
+
+span.swiper-pagination-progressbar-fill {
+  --swiper-theme-color:rgba(201, 158, 113, 1);
+  width: 120px;
+  height: 4px;
+}
+
+.reservation {
+  display: flex;
+  padding-bottom: 140px;
+}
+
+.reservation-content {
+  display: block;
+  padding: 72px 48px;
+  background-color: rgb(28, 24, 20);
+}
+
+.reservation-inp {
+  padding: 16px 20px;
+  background-color: rgb(20, 17, 14);
+  width: 489px;
+  margin-bottom: 24px;
+}
+
+.reservation-btn {
+  margin-top: 56px;
+}
+
+.news {
+  padding-bottom: 140px;
+}
+
+.news-wrap {
+  display: flex;
+  gap: 36px;
+}
+
+.news-card {
+  background-color: rgb(28, 24, 20);
+}
+
+.news-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-by {
+  font-family: "Inter", sans-serif;
+}
+
+.news-info {
+  padding: 20px 24px 16px;
+}
+
+.news-by_accent {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(201, 158, 113);
+}
+
+.news-data {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.news-title {
+  padding-left: 24px;
+  font-family: "Righteous", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.news-link_wrap {
+  display: flex;
+  padding: 39px 24px 28px;
+  text-align: start;
+  align-items: center;
+  color: rgb(201, 158, 113);
+  gap: 20px;
+}
+
+.news-link {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

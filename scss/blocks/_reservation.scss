@@ -1,0 +1,18 @@
+.reservation{
+    display: flex;
+    padding-bottom: 140px;
+}
+.reservation-content{
+    display: block;
+    padding: 72px 48px;
+    background-color: $color-fon;
+}
+.reservation-inp{
+    padding: 16px 20px;
+    background-color: $color-main;
+    width: 489px;
+    margin-bottom: 24px;
+}
+.reservation-btn{
+    margin-top: 56px;
+}

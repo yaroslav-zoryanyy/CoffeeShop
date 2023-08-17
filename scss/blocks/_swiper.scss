@@ -1,0 +1,45 @@
+
+.navigation{
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-right{
+    display: flex;
+    gap: 16px;
+}
+.navigation-left{
+    color: $color-accent;
+    width: 120px;
+}
+.prev{
+    padding: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $color-accent;
+}
+.next{
+    padding: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $color-product;
+}
+.swiper-pagination{
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    
+}
+.image-slider__fraction{
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    color: $color-accent;
+    margin-bottom: 20px;
+}
+span.swiper-pagination-progressbar-fill{
+    --swiper-theme-color:rgba(201, 158, 113, 1);
+    width: 120px;
+    height: 4px;
+}

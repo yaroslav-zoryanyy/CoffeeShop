@@ -1,0 +1,18 @@
+.nav-header{
+    flex-grow: 1;
+}
+.container-header,.nav-header,.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    gap: 48px;
+    margin-right: 51px;
+}
+.nav-link{
+    transition:color 0.2s ease-in ;
+    &:hover{
+        color: $color-accent;
+    }
+}

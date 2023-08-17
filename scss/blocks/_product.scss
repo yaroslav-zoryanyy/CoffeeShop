@@ -1,0 +1,73 @@
+.product-wrap{
+    padding: 140px 0;
+}
+.product_cards{
+    display: flex;
+    gap: 36px;
+}
+.product_card{
+    padding: 48px 48px 40px ;
+    background-color: $color-product;
+    &:hover{
+        .coffe_raiting{
+            display: none;
+        }
+        .product-price{
+            display: none;
+        }
+        .product-hover_btn{
+            display:block;
+        }
+        .product-title{
+            padding: 36px 0 38px;
+        }
+    }
+}
+.coffe_raiting{
+    display: flex;
+    justify-content: center;
+    padding: 37px 0 20px;
+    align-items: center;
+}
+.coffee_raiting-title{
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-right: 14px;
+}
+.coffe_star{
+    font-size: 16px;
+    color: $color-accent;
+    margin-right: 7px;
+}
+.product-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+.product-price{
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 0;
+}
+.product-price_accent{
+    font-family: $font-navigation;
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-accent;
+}
+.product-btn{
+    margin-top: 55px;
+}
+.product-hover_btn{
+    text-align: -webkit-center;
+    display: none;
+}
+.product_btn {
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
